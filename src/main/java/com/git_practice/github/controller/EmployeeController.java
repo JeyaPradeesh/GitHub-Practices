@@ -40,6 +40,6 @@ public class EmployeeController {
     @DeleteMapping("/delete/{id}")
     public String delete(@PathVariable Long id) {
         employeeService.delete(id);
-        return "Deleted";
+        return "Deleted Successfully";
     }
 }
